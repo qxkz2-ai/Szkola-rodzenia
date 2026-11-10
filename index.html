@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beata Wawrzynowicz – położna i Szkoła Rodzenia w Śremie | Demo</title>
+<meta name="description" content="Szkoła rodzenia w Śremie prowadzona przez położną Beatę Wawrzynowicz. Małe grupy, konkretne umiejętności, wsparcie po porodzie.">
+<meta name="theme-color" content="#FEF8F5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23A63D57'/%3E%3Cpath d='M32 46c-9-7-14-12-14-18a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 6-5 11-14 18z' fill='%23FEF8F5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FEF8F5; --blush:#FADDE1; --blush-l:#FDEEF0; --lav:#E7E1F5; --mint:#D8EBE0; --butter:#FBEFC9; --sky:#DCEAF6;
+  --berry:#A63D57; --berry-d:#8A2F47; --plum:#2F2540; --plum-2:#43385A;
+  --ink:#2F2A38; --muted:#625B6E; --line:#EADFE3; --white:#fff;
+  --r:22px; --shadow:0 18px 40px -22px rgba(80,40,80,.38);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif; --sans:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;overflow-x:hidden;padding-bottom:76px}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:-.01em}
+h1{font-size:clamp(2.35rem,9vw,4.4rem)}
+h2{font-size:clamp(1.9rem,6vw,3rem)}
+h3{font-size:1.3rem}
+em{font-style:italic;color:var(--berry)}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+section{padding:72px 0}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#5B4F85;margin-bottom:14px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:60ch}
+:focus-visible{outline:3px solid var(--berry);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;z-index:100}
+.skip:focus{left:12px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 26px;border-radius:999px;font:700 1rem var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-primary{background:var(--berry);color:#fff;box-shadow:0 10px 24px -12px rgba(166,61,87,.85)}
+.btn-primary:hover{background:var(--berry-d);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--bg)}
+.btn-sm{min-height:42px;padding:0 18px;font-size:.92rem}
+
+.demo-bar{background:var(--plum);color:#EDE6F7;text-align:center;font-size:.85rem;padding:8px 16px}
+
+header.top{position:sticky;top:0;z-index:50;background:rgba(254,248,245,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:44px;height:44px;border-radius:14px;background:var(--berry);display:grid;place-items:center;flex:none}
+.brand-name{font-family:var(--serif);font-weight:600;font-size:1.28rem;line-height:1.05}
+.brand-sub{display:block;font:700 .66rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#5B4F85;margin-top:3px}
+nav ul{display:none;list-style:none;gap:24px;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:.98rem}
+nav a:hover{color:var(--berry)}
+.burger{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;border:1px solid var(--line);background:var(--white);cursor:pointer}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:.25s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded=true] span{background:transparent}
+.burger[aria-expanded=true] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded=true] span::after{top:0;transform:rotate(-45deg)}
+.drawer{position:fixed;inset:72px 0 0 0;background:var(--bg);padding:28px 24px;display:none;flex-direction:column;gap:6px;z-index:49;overflow:auto}
+.drawer.open{display:flex}
+.drawer a{font:600 1.5rem var(--serif);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line)}
+.drawer .btn{margin-top:18px;font:700 1rem var(--sans);border:2px solid transparent;justify-content:center}
+.top-cta{display:none}
+@media(min-width:1040px){
+  nav ul{display:flex}.burger,.drawer{display:none!important}.top-cta{display:inline-flex;min-height:44px;padding:0 22px}
+  body{padding-bottom:0}.mobile-bar{display:none!important}
+}
+
+/* hero */
+.hero{padding:44px 0 72px;position:relative}
+.hero .wrap{display:grid;gap:44px}
+.hero-copy .lead{margin:22px 0 30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.owner-chip{display:inline-flex;align-items:center;gap:10px;background:var(--white);border:1px solid var(--line);border-radius:999px;padding:6px 16px 6px 6px;margin-bottom:22px;font-weight:500;font-size:.95rem;box-shadow:var(--shadow)}
+.owner-chip i{width:34px;height:34px;border-radius:50%;background:var(--blush);display:grid;place-items:center;font:600 .85rem var(--serif);font-style:normal;color:var(--berry-d)}
+.owner-chip b{font-family:var(--serif);font-weight:600}
+.hero-points{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;margin-top:30px;font-size:.95rem;color:var(--muted)}
+.hero-points li::before{content:"✓";color:#4C8566;font-weight:700;margin-right:8px}
+.hero-art{position:relative;max-width:480px;width:100%;margin-inline:auto}
+.arch{aspect-ratio:4/5;border-radius:999px 999px 28px 28px;background:linear-gradient(170deg,var(--blush),var(--lav) 58%,var(--mint));overflow:hidden;position:relative;box-shadow:var(--shadow)}
+.arch svg{position:absolute;inset:0;width:100%;height:100%}
+.float{position:absolute;background:var(--white);border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);font-size:.88rem;line-height:1.35;border:1px solid var(--line)}
+.float b{display:block;font:600 1.05rem var(--serif)}
+.float.a{left:-8px;bottom:14%}
+.float.b{right:-6px;top:12%}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}.hero{padding:70px 0 100px}.float.a{left:-36px}.float.b{right:-28px}}
+.blob{position:absolute;z-index:-1;border-radius:50%;filter:blur(60px);opacity:.6}
+.blob.one{width:380px;height:380px;background:var(--lav);top:-100px;right:-120px}
+.blob.two{width:320px;height:320px;background:var(--mint);bottom:-80px;left:-120px}
+
+.trust{background:var(--lav);padding:34px 0}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.trust li{text-align:center}
+.trust b{display:block;font:600 2rem var(--serif);color:var(--berry-d)}
+.trust span{font-size:.92rem;color:var(--muted)}
+@media(min-width:760px){.trust ul{grid-template-columns:repeat(4,1fr)}}
+
+.sec-head{max-width:720px;margin-bottom:34px}
+.sec-head h2{margin-bottom:14px}
+
+/* oferta */
+.filters{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 14px;margin:0 -2px 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filters::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:44px;padding:0 20px;border-radius:999px;border:1.5px solid #D9CFE6;background:var(--white);font:600 .95rem var(--sans);color:var(--ink);cursor:pointer;transition:.2s}
+.chip:hover{border-color:var(--berry)}
+.chip[aria-pressed=true]{background:var(--plum);border-color:var(--plum);color:#fff}
+.cards{display:grid;gap:18px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:12px;transition:transform .25s,box-shadow .25s;position:relative}
+.card[hidden]{display:none}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card .ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:var(--blush)}
+.card[data-c=mint] .ico{background:var(--mint)}
+.card[data-c=lav] .ico{background:var(--lav)}
+.card[data-c=butter] .ico{background:var(--butter)}
+.card[data-c=sky] .ico{background:var(--sky)}
+.card p{color:var(--muted);font-size:.98rem}
+.card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:10px;gap:10px}
+.card .from{font-size:.9rem;color:var(--muted)}.card .from b{font:600 1.15rem var(--serif);color:var(--ink)}
+.card .more{font-weight:700;color:var(--berry);text-decoration:none;white-space:nowrap}
+.card .more:hover{text-decoration:underline}
+.tag{position:absolute;top:18px;right:18px;background:var(--plum);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;letter-spacing:.04em}
+@media(min-width:700px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.cards{grid-template-columns:repeat(3,1fr)}}
+
+/* program */
+.program{background:linear-gradient(180deg,var(--bg),var(--blush-l))}
+.program .wrap{display:grid;gap:44px}
+.steps{list-style:none;counter-reset:s;display:grid;gap:14px}
+.steps li{counter-increment:s;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 20px 18px 74px;position:relative;min-height:70px}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:18px;top:14px;font:600 1.7rem var(--serif);color:var(--berry)}
+.steps b{display:block;font-family:var(--serif);font-size:1.1rem;font-weight:600}
+.steps span{color:var(--muted);font-size:.95rem}
+@media(min-width:960px){.program .wrap{grid-template-columns:.8fr 1.2fr;align-items:start}.steps{grid-template-columns:1fr 1fr}.program .sticky{position:sticky;top:110px}}
+
+/* kalkulator */
+.calc .box{background:var(--sky);border-radius:32px;padding:34px 22px;display:grid;gap:26px;align-items:center}
+.calc form{background:var(--white);border-radius:22px;padding:22px;display:grid;gap:14px}
+.calc-out{background:var(--white);border-radius:22px;padding:22px;min-height:140px}
+.calc-out b{font:600 1.4rem var(--serif);display:block;margin:4px 0 8px}
+.calc-out .hint{color:var(--muted)}
+@media(min-width:900px){.calc .box{grid-template-columns:1fr 1fr;padding:48px}}
+
+/* o Beacie */
+.about .wrap{display:grid;gap:40px;align-items:center}
+.portrait{max-width:420px;margin-inline:auto;width:100%;position:relative}
+.portrait .frame{aspect-ratio:4/5;border-radius:var(--r);background:linear-gradient(160deg,var(--mint),var(--blush) 70%,var(--lav));position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.portrait .frame svg{position:absolute;inset:0;width:100%;height:100%}
+.portrait figcaption{position:absolute;left:16px;bottom:16px;right:16px;background:rgba(255,255,255,.94);border-radius:16px;padding:12px 16px;font-size:.9rem}
+.portrait figcaption b{font-family:var(--serif);font-size:1.15rem;display:block}
+.about h2{margin-bottom:18px}
+.about p{color:var(--muted);margin-bottom:14px;max-width:58ch}
+.quals{list-style:none;display:grid;gap:10px;margin:22px 0 28px}
+.quals li{padding-left:34px;position:relative}
+.quals li::before{content:"";position:absolute;left:0;top:4px;width:22px;height:22px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F6B4C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/14px no-repeat}
+@media(min-width:960px){.about .wrap{grid-template-columns:.85fr 1.15fr;gap:80px}}
+
+/* galeria */
+.gallery{background:var(--blush-l)}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal figure{border-radius:20px;overflow:hidden;position:relative;aspect-ratio:1/1}
+.gal figure:nth-child(1),.gal figure:nth-child(4){aspect-ratio:4/5}
+.gal svg{position:absolute;inset:0;width:100%;height:100%}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);border-radius:999px;padding:4px 12px;font-size:.8rem;font-weight:500}
+@media(min-width:900px){.gal{grid-template-columns:repeat(6,1fr)}.gal figure,.gal figure:nth-child(n){aspect-ratio:3/4}}
+
+/* ceny */
+.pricing{background:var(--plum);color:#F7F1FA}
+.pricing .eyebrow{color:#CFC4F0}
+.pricing .lead{color:#D9D0E6}
+.plans{display:grid;gap:18px;margin-top:10px}
+.plan{background:var(--plum-2);border:1px solid #5A4D75;border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:14px;position:relative}
+.plan.pop{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.plan.pop .tag{background:var(--berry)}
+.plan h3{font-size:1.5rem}
+.price{font:600 2.8rem var(--serif);line-height:1}
+.price small{font:500 1rem var(--sans);opacity:.75}
+.plan ul{list-style:none;display:grid;gap:8px;font-size:.97rem}
+.plan li::before{content:"✓";margin-right:10px;color:#A9DDBF;font-weight:700}
+.plan.pop li::before{color:#2F7A52}
+.plan .btn{margin-top:auto}
+.plan:not(.pop) .btn-ghost{border-color:#F7F1FA;color:#F7F1FA}
+.plan:not(.pop) .btn-ghost:hover{background:#F7F1FA;color:var(--plum)}
+.dates{margin-top:44px;background:var(--plum-2);border-radius:var(--r);padding:26px}
+.dates h3{margin-bottom:10px}
+.date-row{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;padding:14px 0;border-top:1px solid #5A4D75;align-items:center}
+.date-row .d{font:600 1.5rem var(--serif);color:var(--blush);min-width:96px}
+.date-row .t{font-size:.95rem;color:#D9D0E6}
+.date-row .seats{font-size:.85rem;font-weight:700;color:#A9DDBF}
+.date-row .seats.low{color:#FFB8A8}
+.date-row .btn{grid-column:1/-1}
+@media(min-width:760px){.date-row{grid-template-columns:130px 1fr 150px auto}.date-row .btn{grid-column:auto}}
+@media(min-width:960px){.plans{grid-template-columns:repeat(3,1fr)}}
+
+/* opinie */
+.quotes{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 18px;margin:0 -20px;scrollbar-width:none}
+.quotes::-webkit-scrollbar{display:none}
+.quote{flex:0 0 min(86%,360px);scroll-snap-align:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.stars{color:#B5740E;letter-spacing:3px;margin-bottom:10px;font-size:1.1rem}
+.quote p{font:italic 400 1.1rem/1.5 var(--serif);margin-bottom:16px}
+.quote footer{display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--muted)}
+.quote footer i{width:40px;height:40px;border-radius:50%;background:var(--lav);display:grid;place-items:center;font:600 1rem var(--serif);font-style:normal;color:#5B4F85;flex:none}
+.quote footer b{color:var(--ink);display:block}
+@media(min-width:1000px){.quotes{display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;padding:0;margin:0}.quote{flex:none}}
+.note{margin-top:16px;font-size:.85rem;color:var(--muted)}
+
+/* poradnik */
+.guide{background:var(--mint)}
+.guide .wrap{display:grid;gap:34px}
+.bag{background:var(--white);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.bag h3{margin-bottom:6px}
+.progress{height:10px;border-radius:99px;background:#E6EFE9;overflow:hidden;margin:12px 0 10px}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#7FC7A0,#4C9F77);border-radius:99px;transition:width .35s}
+#bag-txt{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+.bag ul{list-style:none;display:grid;gap:4px}
+.bag label{display:flex;gap:12px;align-items:center;min-height:46px;font-weight:500;cursor:pointer;padding:0 6px;border-radius:12px}
+.bag label:hover{background:#F4FAF6}
+.bag input{width:22px;height:22px;min-height:22px;accent-color:#2F7A52;flex:none;padding:0;appearance:auto;-webkit-appearance:checkbox}
+.bag input:checked+span{text-decoration:line-through;color:var(--muted)}
+.posts{display:grid;gap:12px;align-content:start}
+.post{background:var(--white);border-radius:18px;border:1px solid #CFE3D6;overflow:hidden;margin-bottom:0}
+.post summary{padding:18px 54px 18px 20px;font-size:1.02rem}
+.post small{display:block;font:700 .72rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#2F6B4C;margin-bottom:2px}
+@media(min-width:960px){.guide .wrap{grid-template-columns:1fr 1fr;gap:50px;align-items:start}}
+
+/* FAQ */
+.faq .wrap{display:grid;gap:36px}
+details{background:var(--white);border:1px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:18px 56px 18px 22px;font:600 1.08rem var(--serif);position:relative;min-height:56px;display:flex;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font:400 1.6rem var(--sans);color:var(--berry);transition:transform .25s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding:0 22px 20px;color:var(--muted)}
+@media(min-width:960px){.faq .wrap{grid-template-columns:.7fr 1.3fr;gap:70px}}
+
+/* zapis */
+.signup .box{background:linear-gradient(150deg,var(--blush),var(--lav) 60%,var(--mint));border-radius:32px;padding:34px 22px;display:grid;gap:34px;box-shadow:var(--shadow)}
+form{background:var(--white);border-radius:24px;padding:26px 22px;display:grid;gap:16px}
+.field{display:grid;gap:6px}
+label{font-weight:700;font-size:.92rem}
+input,select{font:inherit;font-size:1rem;min-height:52px;border-radius:14px;border:1.5px solid #D6CCE0;padding:0 16px;background:var(--bg);color:var(--ink);width:100%;appearance:none;-webkit-appearance:none}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none' stroke='%232F2A38' stroke-width='2'%3E%3Cpath d='M1 1l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+input:focus,select:focus{outline:3px solid rgba(166,61,87,.3);border-color:var(--berry)}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;color:var(--muted);font-weight:400}
+.check input{width:22px;min-height:22px;height:22px;flex:none;appearance:auto;-webkit-appearance:checkbox;accent-color:var(--berry);margin-top:2px;padding:0}
+.err{color:#A12A1C;font-size:.85rem;min-height:1em}
+.ok{display:none;text-align:center;background:var(--white);border-radius:24px}
+.ok h3{margin-bottom:8px}
+.ok.show{display:block;padding:34px 22px}
+form.sent{display:none}
+.signup h2{margin-bottom:14px}
+.signup .info{display:grid;gap:12px;margin-top:22px;list-style:none}
+.signup .info li{display:flex;gap:12px;align-items:center;font-weight:500}
+.signup .info svg{flex:none}
+@media(min-width:900px){.signup .box{grid-template-columns:1fr 1fr;padding:56px;align-items:center}form{padding:34px}}
+
+/* kontakt */
+.contact{padding-top:20px}
+.contact .grid{display:grid;gap:18px}
+.contact .c{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.contact .c h3{margin-bottom:8px;font-size:1.15rem}
+.contact .c a{font-weight:700;text-decoration:none;color:var(--berry)}
+.contact .c a:hover{text-decoration:underline}
+.contact .c p{margin-bottom:4px}
+.contact .sm{color:var(--muted);font-size:.9rem}
+.map{border-radius:var(--r);overflow:hidden;position:relative;min-height:240px;background:var(--sky)}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map a.btn{position:absolute;left:14px;bottom:14px;color:#fff;text-decoration:none}
+.map a.btn:hover{text-decoration:none}
+@media(min-width:800px){.contact .grid{grid-template-columns:1fr 1fr 1.3fr}}
+footer.site{padding:44px 0 30px;border-top:1px solid var(--line);margin-top:60px;font-size:.9rem;color:var(--muted)}
+footer.site .wrap{display:grid;gap:20px}
+footer.site .brand-name{color:var(--ink)}
+.f-links{display:flex;flex-wrap:wrap;gap:8px 22px;list-style:none}
+.f-links a{text-decoration:none}.f-links a:hover{color:var(--berry)}
+@media(min-width:800px){footer.site .wrap{grid-template-columns:1fr auto;align-items:center}}
+
+.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1.5fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(254,248,245,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.mobile-bar .btn{min-height:50px;padding:0 12px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.card,.progress i{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<div class="demo-bar" role="note">Wersja demonstracyjna – teksty, ceny, zdjęcia i opinie są przykładowe.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#start" aria-label="Beata Wawrzynowicz – Szkoła Rodzenia w Śremie, strona główna">
+      <span class="brand-mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 64 64"><path d="M32 50c-10-7.500-16-13-16-19.500a9 9 0 0 1 16-5.500 9 9 0 0 1 16 5.500C48 37 42 42.500 32 50z" fill="#FEF8F5"/></svg></span>
+      <span class="brand-name">Beata Wawrzynowicz<span class="brand-sub">Położna · Szkoła Rodzenia</span></span>
+    </a>
+    <nav aria-label="Menu główne">
+      <ul>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#beata">O Beacie</a></li>
+        <li><a href="#terminy">Terminy i ceny</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#poradnik">Poradnik</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary top-cta" href="#zapis">Zapisz się</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Otwórz menu"><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#oferta">Oferta</a><a href="#program">Program</a><a href="#beata">O Beacie</a>
+  <a href="#terminy">Terminy i ceny</a><a href="#opinie">Opinie</a><a href="#poradnik">Poradnik</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a>
+  <a class="btn btn-primary" href="#zapis">Zapisz się na kurs</a>
+</div>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="start">
+  <div class="blob one"></div><div class="blob two"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="owner-chip"><i aria-hidden="true">BW</i><span>Prowadzi <b>Beata Wawrzynowicz</b>, położna</span></div>
+      <h1>Poród, na który <em>jesteście gotowi</em>.</h1>
+      <p class="lead">Szkoła rodzenia w Śremie, prowadzona osobiście przez położną. Małe grupy, konkretna wiedza, ćwiczenia i wsparcie, żebyście do porodu i pierwszych tygodni z dzieckiem podeszli z pewnością, a nie ze strachem.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#zapis">Zapisz się na kurs</a>
+        <a class="btn btn-ghost" href="#terminy">Zobacz terminy i ceny</a>
+      </div>
+      <ul class="hero-points">
+        <li>Grupy do 8 par</li><li>Zajęcia także dla taty</li><li>Wsparcie po porodzie</li>
+      </ul>
+    </div>
+    <div class="hero-art reveal">
+      <div class="arch" role="img" aria-label="Ilustracja: przyszli rodzice w pastelowych barwach">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <circle cx="300" cy="110" r="46" fill="#FEF8F5" opacity=".85"/>
+          <path d="M-20 420 C80 360 140 400 220 360 S360 340 430 380 V520 H-20Z" fill="#D8EBE0"/>
+          <path d="M-20 460 C90 410 170 450 250 415 S380 400 430 430 V520 H-20Z" fill="#C4E0D1"/>
+          <circle cx="170" cy="190" r="30" fill="#8A5A44"/>
+          <path d="M140 200c-6 30-2 56 10 80h46c10-24 12-50 4-80-12 10-48 10-60 0z" fill="#5B3A2D"/>
+          <path d="M118 500L120 440c-10-70-4-150 22-190 14-22 54-22 68 0 26 40 32 120 22 190L224 500z" fill="#F0A0B2"/>
+          <ellipse cx="190" cy="350" rx="48" ry="56" fill="#F6B8C6"/>
+          <circle cx="178" cy="196" r="24" fill="#F6D2B6"/>
+          <path d="M152 188c4-22 40-30 52-6-14-6-34-4-52 6z" fill="#5B3A2D"/>
+          <circle cx="272" cy="214" r="23" fill="#F6D2B6"/>
+          <path d="M250 206c2-22 42-22 44 0-12-8-32-8-44 0z" fill="#3A2E3F"/>
+          <path d="M234 500L236 440c-6-60-4-120 14-150 10-16 42-16 52 0 18 30 20 90 14 150L318 500z" fill="#8C9BD0"/>
+          <path d="M214 330c20 8 36 4 50-10" stroke="#F6D2B6" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <path d="M200 98c-14-10-22-18-22-27a11 11 0 0 1 22-5 11 11 0 0 1 22 5c0 9-8 17-22 27z" fill="#A63D57"/>
+        </svg>
+      </div>
+      <div class="float b"><b>Zapisy otwarte</b>na styczeń i luty</div>
+      <div class="float a"><b>Małe grupy</b>maks. 8 par w kursie</div>
+    </div>
+  </div>
+</section>
+
+<div class="trust" aria-label="Najważniejsze fakty">
+  <div class="wrap"><ul>
+    <li><b>600+</b><span>przeszkolonych par</span></li>
+    <li><b>12 lat</b><span>pracy jako położna</span></li>
+    <li><b>8 par</b><span>maksymalnie w grupie</span></li>
+    <li><b>6 tyg.</b><span>kontaktu po porodzie</span></li>
+  </ul></div>
+</div>
+
+<!-- OFERTA -->
+<section id="oferta">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Oferta</span>
+      <h2>Wybierzcie to, czego <em>potrzebujecie</em></h2>
+      <p class="lead">Od pełnego kursu dla par po pojedyncze konsultacje i wizyty w domu. Każdą formę prowadzi Beata – bez anonimowych wykładów.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtruj ofertę">
+      <button class="chip" data-f="all" aria-pressed="true">Wszystko</button>
+      <button class="chip" data-f="przed" aria-pressed="false">Przed porodem</button>
+      <button class="chip" data-f="po" aria-pressed="false">Po porodzie</button>
+      <button class="chip" data-f="tata" aria-pressed="false">Dla taty</button>
+      <button class="chip" data-f="online" aria-pressed="false">Online</button>
+    </div>
+    <div class="cards" id="cards">
+      <article class="card" data-cat="przed" data-c="blush"><span class="tag">Najczęściej wybierany</span>
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8A2F47" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.500-9-9.500A5 5 0 0 1 12 6a5 5 0 0 1 9 5.500C19 16.500 12 21 12 21z"/></svg></div>
+        <h3>Kurs dla par</h3><p>Pełny cykl 5 spotkań: przebieg porodu, techniki oddychania i pozycje, plan porodu, opieka nad noworodkiem.</p>
+        <div class="meta"><span class="from">od <b>690 zł</b></span><a class="more" href="#zapis" data-pick="Kurs dla par">Zapisz się →</a></div></article>
+      <article class="card" data-cat="online przed" data-c="sky">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2F5E86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+        <h3>Szkoła rodzenia online</h3><p>Te same treści na żywo przez internet, z nagraniami do powtórki. Dla zabieganych i mieszkających poza Śremem.</p>
+        <div class="meta"><span class="from">od <b>490 zł</b></span><a class="more" href="#zapis" data-pick="Szkoła rodzenia online">Zapisz się →</a></div></article>
+      <article class="card" data-cat="tata przed" data-c="lav">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5B4F85" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.500"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <h3>Spotkanie dla taty</h3><p>Praktyczne zajęcia: jak wspierać w trakcie porodu, jak ją odciążyć i jak pewnie wziąć dziecko na ręce.</p>
+        <div class="meta"><span class="from">od <b>120 zł</b></span><a class="more" href="#zapis" data-pick="Spotkanie dla taty">Zapisz się →</a></div></article>
+      <article class="card" data-cat="po" data-c="mint">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2F6B4C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 5 6.500 5 10a5 5 0 0 1-10 0c0-3.500 2-6 5-10z"/></svg></div>
+        <h3>Konsultacja laktacyjna</h3><p>Pierwsze karmienie, przystawianie, typowe kłopoty. Indywidualnie, w gabinecie lub u Was w domu.</p>
+        <div class="meta"><span class="from">od <b>180 zł</b></span><a class="more" href="#zapis" data-pick="Konsultacja laktacyjna">Umów →</a></div></article>
+      <article class="card" data-cat="po" data-c="butter">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7A5C0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <h3>Wizyta położnej w domu</h3><p>Opieka nad mamą i noworodkiem po powrocie ze szpitala: kontrola, pielęgnacja pępka, kąpiel, odpowiedzi na pytania.</p>
+        <div class="meta"><span class="from">od <b>150 zł</b></span><a class="more" href="#zapis" data-pick="Wizyta położnej w domu">Umów →</a></div></article>
+      <article class="card" data-cat="przed" data-c="blush">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8A2F47" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v6l-4 4M12 13l4 4M6 10h12"/></svg></div>
+        <h3>Ruch dla ciężarnych</h3><p>Łagodne ćwiczenia, rozciąganie i praca z oddechem, dopasowane do trymestru. Raz w tygodniu, w małej grupie.</p>
+        <div class="meta"><span class="from">od <b>35 zł</b> / zajęcia</span><a class="more" href="#zapis" data-pick="Ruch dla ciężarnych">Zapisz się →</a></div></article>
+      <article class="card" data-cat="po" data-c="sky">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2F5E86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-4.500-6-10a6 6 0 0 1 12 0c0 5.500-6 10-6 10z"/><path d="M9 11h6"/></svg></div>
+        <h3>Masaż niemowląt</h3><p>Delikatne techniki, które wspierają sen, trawienie i budują więź. Dla rodziców z dzieckiem od 6. tygodnia życia.</p>
+        <div class="meta"><span class="from">od <b>140 zł</b></span><a class="more" href="#zapis" data-pick="Masaż niemowląt">Zapisz się →</a></div></article>
+      <article class="card" data-cat="po tata" data-c="lav">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5B4F85" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8h14M7 21h10"/></svg></div>
+        <h3>Pierwsza pomoc dla niemowląt</h3><p>Zadławienie, gorączka, resuscytacja. Ćwiczycie na fantomie, żeby w stresie wiedzieć, co robić.</p>
+        <div class="meta"><span class="from">od <b>150 zł</b> / para</span><a class="more" href="#zapis" data-pick="Pierwsza pomoc dla niemowląt">Zapisz się →</a></div></article>
+      <article class="card" data-cat="po" data-c="mint">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2F6B4C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8c4 6 12 6 16 0M4 8l4 10M20 8l-4 10"/></svg></div>
+        <h3>Chustonoszenie</h3><p>Warsztat z doradcą: jak bezpiecznie wiązać chustę, wybrać nosidełko i nosić bez bólu pleców.</p>
+        <div class="meta"><span class="from">od <b>120 zł</b></span><a class="more" href="#zapis" data-pick="Chustonoszenie">Zapisz się →</a></div></article>
+      <article class="card" data-cat="przed po" data-c="butter">
+        <div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7A5C0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M12 8v12M3 13h18M12 8c-2-4-6-3-5 0M12 8c2-4 6-3 5 0"/></svg></div>
+        <h3>Voucher na prezent</h3><p>Kurs lub konsultacja w ładnej oprawie – świetny prezent od babci, cioci albo przyjaciółki.</p>
+        <div class="meta"><span class="from">dowolna kwota</span><a class="more" href="#kontakt">Zapytaj →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="program" id="program">
+  <div class="wrap">
+    <div class="sticky reveal">
+      <span class="eyebrow">Program kursu</span>
+      <h2>Pięć spotkań, <em>jedna pewność</em></h2>
+      <p class="lead" style="margin-top:14px">Każde spotkanie to połowa wiedzy, połowa praktyki. Bez przeładowania slajdami, z miejscem na Wasze pytania.</p>
+      <a class="btn btn-primary" style="margin-top:26px" href="#zapis">Zarezerwuj miejsce</a>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><b>Zanim ruszy akcja</b><span>Objawy zbliżającego się porodu, kiedy jechać do szpitala, torba i dokumenty.</span></li>
+      <li class="reveal"><b>Przebieg porodu</b><span>Fazy, procesy w ciele, co robi zespół medyczny i jakie macie prawa.</span></li>
+      <li class="reveal"><b>Oddech, ruch, ulga</b><span>Pozycje porodowe, techniki oddechowe, masaż i metody łagodzenia bólu.</span></li>
+      <li class="reveal"><b>Rola taty</b><span>Jak wspierać, jak rozmawiać z personelem i jak zadbać o siebie.</span></li>
+      <li class="reveal"><b>Noworodek i połóg</b><span>Pielęgnacja, karmienie, pierwsze tygodnie w domu i kiedy prosić o pomoc.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- KALKULATOR -->
+<section class="calc" id="kalkulator">
+  <div class="wrap">
+    <div class="box reveal">
+      <div>
+        <span class="eyebrow">Kiedy zacząć?</span>
+        <h2>Sprawdź, <em>kiedy</em> najlepiej na kurs</h2>
+        <p class="lead" style="margin-top:12px">Wpisz przewidywany termin porodu, a podpowiemy najlepszy czas i najbliższą grupę.</p>
+      </div>
+      <div>
+        <form id="calc" novalidate>
+          <div class="field"><label for="c-due">Przewidywany termin porodu</label><input id="c-due" type="date"></div>
+          <button class="btn btn-primary" type="submit">Pokaż rekomendację</button>
+        </form>
+        <div class="calc-out" id="calc-out" role="status" aria-live="polite" style="margin-top:14px"><span class="hint">Wynik pojawi się tutaj.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O BEACIE -->
+<section class="about" id="beata">
+  <div class="wrap">
+    <figure class="portrait reveal">
+      <div class="frame" role="img" aria-label="Miejsce na portret Beaty Wawrzynowicz">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <circle cx="90" cy="90" r="70" fill="#FEF8F5" opacity=".5"/><circle cx="330" cy="170" r="40" fill="#FEF8F5" opacity=".4"/>
+          <path d="M70 520c-6-110 26-190 130-190s136 80 130 190z" fill="#FEF8F5"/>
+          <path d="M150 335l50 70 50-70" fill="#E7E1F5"/>
+          <rect x="180" y="250" width="40" height="60" rx="16" fill="#F6D2B6"/>
+          <ellipse cx="200" cy="190" rx="62" ry="70" fill="#F6D2B6"/>
+          <path d="M132 190c-10-70 30-100 70-98 46 2 70 36 64 98-6-34-26-56-64-56-36 0-58 24-70 56z" fill="#8B5A3C"/>
+          <path d="M132 190c-6 50 6 80 26 96-14-34-14-64-12-96zM268 190c6 50-6 80-26 96 14-34 14-64 12-96z" fill="#8B5A3C"/>
+          <circle cx="178" cy="196" r="4.500" fill="#3A2E3F"/><circle cx="222" cy="196" r="4.500" fill="#3A2E3F"/>
+          <path d="M184 222c10 10 22 10 32 0" stroke="#A63D57" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="164" cy="214" r="9" fill="#F4B4B4" opacity=".6"/><circle cx="236" cy="214" r="9" fill="#F4B4B4" opacity=".6"/>
+          <path d="M178 360c0 20 44 20 44 0" stroke="#A63D57" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <figcaption><b>Beata Wawrzynowicz</b>Położna, właścicielka szkoły rodzenia w Śremie</figcaption>
+    </figure>
+    <div class="reveal">
+      <span class="eyebrow">O Beacie</span>
+      <h2>Cześć, jestem <em>Beata</em></h2>
+      <p>Jestem położną i wierzę, że dobrze przygotowani rodzice rodzą spokojniej. Dlatego moje zajęcia to mało teorii, dużo praktyki i bezpieczna przestrzeń na każde pytanie – także to, o które wstyd zapytać.</p>
+      <p>Szkołę prowadzę osobiście: znam każdą parę z imienia i jestem dla Was dostępna również po porodzie.</p>
+      <ul class="quals">
+        <li>Dyplom położnej, ponad 12 lat pracy na oddziale położniczym</li>
+        <li>Certyfikowana doradczyni laktacyjna</li>
+        <li>Instruktorka pierwszej pomocy przedmedycznej dla niemowląt</li>
+        <li>Ponad 600 par przeszkolonych w Śremie i okolicy</li>
+      </ul>
+      <a class="btn btn-ghost" href="#kontakt">Napisz do Beaty</a>
+      <p class="note">Kwalifikacje i liczby w demo są przykładowe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="gallery" id="galeria">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Z naszych zajęć</span>
+      <h2>Tak <em>to wygląda</em></h2>
+      <p class="lead">Kameralnie, ciepło i bez pośpiechu. Zdjęcia poglądowe – w finalnej wersji prawdziwe, z Waszych zajęć.</p>
+    </div>
+    <div class="gal reveal">
+      <figure><svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="400" fill="#E7E1F5"/><ellipse cx="150" cy="330" rx="130" ry="30" fill="#CFC4EA"/><circle cx="150" cy="240" r="80" fill="#FADDE1"/><circle cx="125" cy="215" r="22" fill="#fff" opacity=".6"/></svg><figcaption>Piłka i mata</figcaption></figure>
+      <figure><svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="300" fill="#FBEFC9"/><path d="M90 200c-10-50 30-70 40-30 4 22-2 50-14 54-16 4-24-8-26-24zM180 215c-10-50 30-70 40-30 4 22-2 50-14 54-16 4-24-8-26-24z" fill="#FADDE1"/><circle cx="105" cy="150" r="9" fill="#FADDE1"/><circle cx="125" cy="144" r="8" fill="#FADDE1"/><circle cx="196" cy="162" r="9" fill="#FADDE1"/><circle cx="216" cy="156" r="8" fill="#FADDE1"/></svg><figcaption>Maleńkie stópki</figcaption></figure>
+      <figure><svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="300" fill="#D8EBE0"/><circle cx="150" cy="150" r="90" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="2 14" stroke-linecap="round"/><circle cx="150" cy="60" r="22" fill="#F6D2B6"/><circle cx="238" cy="150" r="22" fill="#F0A0B2"/><circle cx="150" cy="240" r="22" fill="#8C9BD0"/><circle cx="62" cy="150" r="22" fill="#FBEFC9"/></svg><figcaption>Krąg rodziców</figcaption></figure>
+      <figure><svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="400" fill="#FADDE1"/><ellipse cx="150" cy="280" rx="90" ry="100" fill="#F6B8C6"/><path d="M80 250c20 30 120 30 140 0" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" opacity=".7"/><path d="M150 210c-14-10-22-18-22-27a11 11 0 0 1 22-5 11 11 0 0 1 22 5c0 9-8 17-22 27z" fill="#A63D57"/></svg><figcaption>Dłonie na brzuszku</figcaption></figure>
+      <figure><svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="300" fill="#DCEAF6"/><path d="M60 100c30 120 150 120 180 0z" fill="#8C9BD0"/><circle cx="150" cy="130" r="38" fill="#F6D2B6"/><path d="M60 100c40 30 140 30 180 0" stroke="#fff" stroke-width="8" fill="none"/></svg><figcaption>Chusta</figcaption></figure>
+      <figure><svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="300" fill="#FDEEF0"/><rect x="70" y="140" width="110" height="90" rx="14" fill="#fff"/><path d="M180 160c40-4 40 50 0 46" stroke="#fff" stroke-width="10" fill="none"/><path d="M100 120c-8-14 8-22 0-36M130 120c-8-14 8-22 0-36M160 120c-8-14 8-22 0-36" stroke="#CFC4EA" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="50" y="232" width="170" height="14" rx="7" fill="#EADFE3"/></svg><figcaption>Herbata po zajęciach</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TERMINY I CENY -->
+<section class="pricing" id="terminy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Terminy i ceny</span>
+      <h2>Przejrzyste ceny, <em style="color:#FFB5C4">bez niespodzianek</em></h2>
+      <p class="lead">Wszystko widzicie od razu. Ceny przykładowe, w wersji demo.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal"><h3>Online</h3><div class="price">490 zł<small> / para</small></div>
+        <ul><li>5 spotkań na żywo</li><li>Nagrania do obejrzenia później</li><li>Materiały w PDF</li></ul>
+        <a class="btn btn-ghost" href="#zapis" data-pick="Szkoła rodzenia online">Wybieram</a></div>
+      <div class="plan pop reveal"><span class="tag">Polecamy</span><h3>Kurs dla par</h3><div class="price">690 zł<small> / para</small></div>
+        <ul><li>5 spotkań stacjonarnych, 10 godz.</li><li>Grupa do 8 par</li><li>Ćwiczenia praktyczne</li><li>Kontakt z Beatą po porodzie</li></ul>
+        <a class="btn btn-primary" href="#zapis" data-pick="Kurs dla par">Wybieram</a></div>
+      <div class="plan reveal"><h3>Pakiet pełny</h3><div class="price">990 zł<small> / para</small></div>
+        <ul><li>Kurs dla par</li><li>Konsultacja laktacyjna</li><li>Pierwsza pomoc dla niemowląt</li><li>Wizyta położnej w domu</li></ul>
+        <a class="btn btn-ghost" href="#zapis" data-pick="Pakiet pełny">Wybieram</a></div>
+    </div>
+    <div class="dates reveal">
+      <h3>Najbliższe terminy</h3>
+      <div id="dates"></div>
+    </div>
+  </div>
+</section>
+
+<!-- OPINIE -->
+<section id="opinie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Opinie</span>
+      <h2>Mówią <em>rodzice</em></h2>
+    </div>
+    <div class="quotes" tabindex="0" aria-label="Opinie rodziców – przewiń w bok">
+      <blockquote class="quote"><div class="stars" aria-label="5 na 5 gwiazdek">★★★★★</div><p>„Weszliśmy z masą obaw, wyszliśmy z planem. Mąż pierwszy raz powiedział: ja wiem, co mam robić.”</p><footer><i>A</i><span><b>Agnieszka i Tomek</b>Śrem, kurs dla par</span></footer></blockquote>
+      <blockquote class="quote"><div class="stars" aria-label="5 na 5 gwiazdek">★★★★★</div><p>„Konsultacja laktacyjna w domu uratowała nam pierwszy tydzień. Spokój i konkret, o to chodziło.”</p><footer><i>M</i><span><b>Monika</b>Książ Wlkp., konsultacja</span></footer></blockquote>
+      <blockquote class="quote"><div class="stars" aria-label="5 na 5 gwiazdek">★★★★★</div><p>„Online, z kuchni, z kubkiem herbaty – a jakość jak na żywo. Polecam każdemu, kto mieszka dalej.”</p><footer><i>K</i><span><b>Karolina</b>Szkoła online</span></footer></blockquote>
+      <blockquote class="quote"><div class="stars" aria-label="5 na 5 gwiazdek">★★★★★</div><p>„Kurs pierwszej pomocy na fantomie to najlepiej wydane pieniądze. Teraz nie panikuję przy każdym kaszlu.”</p><footer><i>P</i><span><b>Paulina i Marek</b>Dolsk, pierwsza pomoc</span></footer></blockquote>
+    </div>
+    <p class="note">Opinie przykładowe – w finalnej wersji prawdziwe, z imionami i zgodą autorów.</p>
+  </div>
+</section>
+
+<!-- PORADNIK -->
+<section class="guide" id="poradnik">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" style="color:#2F6B4C">Poradnik</span>
+      <h2>Spakuj torbę <em>do szpitala</em></h2>
+      <p class="lead" style="margin:12px 0 22px">Odhaczaj, a my pilnujemy postępu. Lista przygotowana przez położną.</p>
+      <div class="bag">
+        <h3>Torba do porodu</h3>
+        <div class="progress" aria-hidden="true"><i id="bag-bar"></i></div>
+        <p id="bag-txt" role="status">Spakowano 0 z 10</p>
+        <ul id="bag"></ul>
+      </div>
+    </div>
+    <div class="posts reveal">
+      <h3 style="margin-bottom:6px">Z bloga Beaty</h3>
+      <details class="post"><summary><span><small>Poród</small>5 sygnałów, że to już czas jechać do szpitala</span></summary><p>Regularne skurcze co 5 minut przez godzinę, odejście wód płodowych, krwawienie, brak ruchów dziecka lub silny, ciągły ból – w takich sytuacjach nie czekaj. Zadzwoń do szpitala i spokojnie jedź. (Przykładowy tekst.)</p></details>
+      <details class="post"><summary><span><small>Noworodek</small>Pierwsze 72 godziny z dzieckiem w domu</span></summary><p>Karmienie na żądanie, kontakt skóra do skóry, kontrola wagi i żółtaczki. Zaplanuj wizytę położnej w 2.–3. dobie po wypisie. (Przykładowy tekst.)</p></details>
+      <details class="post"><summary><span><small>Dla taty</small>Jak być wsparciem na sali porodowej</span></summary><p>Bądź obecny, powtarzaj ustalone hasła, pilnuj picia i oddechu, nie komentuj bólu. Ona poprowadzi, ty ją podtrzymujesz. (Przykładowy tekst.)</p></details>
+      <details class="post"><summary><span><small>Karmienie</small>Pierwsze przystawienie – 4 rzeczy, które pomagają</span></summary><p>Wygodna pozycja, szeroko otwarte usta dziecka, broda przy piersi, brak bólu w trakcie. Jeśli boli – zgłoś się po pomoc. (Przykładowy tekst.)</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="reveal"><span class="eyebrow">FAQ</span><h2>Najczęstsze <em>pytania</em></h2><p class="lead" style="margin-top:12px">Nie ma tu Twojego? Zadzwoń lub napisz.</p></div>
+    <div class="reveal">
+      <details><summary>Od kiedy najlepiej zacząć kurs?</summary><p>Najlepiej między 28. a 34. tygodniem ciąży, tak żeby skończyć kurs na kilka tygodni przed terminem. Sprawdź kalkulator wyżej.</p></details>
+      <details><summary>Czy tata musi iść ze mną?</summary><p>Nie musi, ale bardzo zachęcamy. Może to być także siostra, mama lub przyjaciółka – osoba, która będzie Cię wspierać.</p></details>
+      <details><summary>Ile osób jest w grupie?</summary><p>Maksymalnie 8 par, dzięki czemu każdy ma czas na pytania i ćwiczenia.</p></details>
+      <details><summary>Co zabrać na zajęcia?</summary><p>Wygodny strój, matę lub koc i poduszkę. Resztę mamy na miejscu.</p></details>
+      <details><summary>Czy mogę odwołać lub przełożyć udział?</summary><p>Tak. Do 7 dni przed startem zwracamy wpłatę lub przenosimy Cię na kolejny termin.</p></details>
+      <details><summary>Jak zapłacić i czy dostanę fakturę?</summary><p>Zaliczka online lub przelewem, reszta na miejscu. Na życzenie wystawiamy fakturę.</p></details>
+      <details><summary>Czy pomagacie po porodzie?</summary><p>Tak. Beata jest dostępna do 6 tygodni po porodzie, a w pakiecie pełnym macie wizytę w domu i konsultację laktacyjną.</p></details>
+      <details><summary>Czy dojeżdżacie spoza Śremu?</summary><p>Zajęcia stacjonarne odbywają się w Śremie. Dla mieszkańców okolicznych miejscowości mamy wersję online oraz wizyty w domu po wcześniejszym ustaleniu.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ZAPIS -->
+<section class="signup" id="zapis">
+  <div class="wrap">
+    <div class="box">
+      <div>
+        <span class="eyebrow">Zapisy</span>
+        <h2>Zarezerwujcie <em>miejsce</em></h2>
+        <p class="lead">Wypełnienie zajmuje minutę. Odezwiemy się w ciągu doby, potwierdzimy termin i prześlemy szczegóły płatności.</p>
+        <ul class="info">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A2F47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg><a href="tel:+48000000000">+48 000 000 000</a></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A2F47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:kontakt@example.pl">kontakt@example.pl</a></li>
+        </ul>
+      </div>
+      <div>
+        <form id="signup" novalidate>
+          <div class="field"><label for="f-name">Imię i nazwisko</label><input id="f-name" name="name" autocomplete="name" required><div class="err" id="e-name"></div></div>
+          <div class="field"><label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required><div class="err" id="e-tel"></div></div>
+          <div class="field"><label for="f-due">Przewidywany termin porodu</label><input id="f-due" name="due" type="month"></div>
+          <div class="field"><label for="f-course">Wybrana forma</label>
+            <select id="f-course" name="course"><option>Kurs dla par</option><option>Szkoła rodzenia online</option><option>Pakiet pełny</option><option>Spotkanie dla taty</option><option>Konsultacja laktacyjna</option><option>Wizyta położnej w domu</option><option>Ruch dla ciężarnych</option><option>Masaż niemowląt</option><option>Pierwsza pomoc dla niemowląt</option><option>Chustonoszenie</option><option>Nie wiem – proszę o kontakt</option></select></div>
+          <label class="check"><input type="checkbox" id="f-ok" required><span>Wyrażam zgodę na kontakt w sprawie zapisu. (Demo – dane nie są nigdzie wysyłane.)</span></label>
+          <div class="err" id="e-ok"></div>
+          <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
+        </form>
+        <div class="ok" id="ok" role="status" tabindex="-1"><h3>Dziękujemy!</h3><p>To demo, więc zgłoszenie nigdzie nie poszło. W prawdziwej wersji Beata oddzwoni w ciągu doby.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="grid">
+      <div class="c reveal"><h3>Gabinet w Śremie</h3><p>ul. Przykładowa 12/3<br>63-100 Śrem</p><p class="sm">Adres przykładowy</p>
+        <h3 style="margin-top:16px">Godziny</h3><p>pon–pt 9:00–19:00<br>sob 9:00–13:00 (po umówieniu)</p></div>
+      <div class="c reveal"><h3>Zadzwoń</h3><p><a href="tel:+48000000000">+48 000 000 000</a></p>
+        <h3 style="margin-top:16px">Napisz</h3><p><a href="mailto:kontakt@example.pl">kontakt@example.pl</a></p><p class="sm">Odpowiadamy w ciągu doby</p>
+        <h3 style="margin-top:16px">Social media</h3><p><a href="#">Instagram</a> · <a href="#">Facebook</a></p></div>
+      <div class="map reveal" role="img" aria-label="Uproszczona mapa Śremu z pinezką gabinetu">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="300" fill="#E8F1F8"/>
+          <path d="M-10 230C80 200 140 250 230 220S360 180 420 210V310H-10Z" fill="#CFE4F2"/>
+          <g stroke="#fff" stroke-width="14" stroke-linecap="round" fill="none"><path d="M0 120H400"/><path d="M130 0V300"/><path d="M290 0V200"/></g>
+          <g stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none"><path d="M0 60H400"/><path d="M210 0V300"/><path d="M60 0V300"/><path d="M0 190H290"/></g>
+          <rect x="140" y="130" width="60" height="50" rx="6" fill="#D8EBE0"/><rect x="300" y="50" width="70" height="60" rx="6" fill="#D8EBE0"/>
+          <path d="M200 60c-18 0-30 13-30 29 0 22 30 50 30 50s30-28 30-50c0-16-12-29-30-29z" fill="#A63D57"/><circle cx="200" cy="88" r="10" fill="#fff"/>
+        </svg>
+        <a class="btn btn-primary btn-sm" href="https://www.google.com/maps/search/?api=1&query=%C5%9Arem" target="_blank" rel="noopener">Otwórz w Mapach</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div><div class="brand-name">Beata Wawrzynowicz<span class="brand-sub">Położna · Szkoła Rodzenia · Śrem</span></div><p style="margin-top:10px">© 2026 Beata Wawrzynowicz. Wersja demonstracyjna.</p></div>
+    <ul class="f-links"><li><a href="#oferta">Oferta</a></li><li><a href="#terminy">Ceny</a></li><li><a href="#faq">FAQ</a></li><li><a href="#">Polityka prywatności</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-ghost" href="tel:+48000000000" aria-label="Zadzwoń do szkoły">Zadzwoń</a>
+  <a class="btn btn-primary" href="#zapis">Zapisz się</a>
+</div>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+  var b=$('#burger'),d=$('#drawer');
+  function close(){d.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Otwórz menu');document.body.style.overflow=''}
+  b.addEventListener('click',function(){
+    var o=!d.classList.contains('open');
+    d.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');document.body.style.overflow=o?'hidden':'';
+  });
+  $$('a',d).forEach(function(a){a.addEventListener('click',close)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+
+  var els=$$('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  $$('.chip').forEach(function(c){c.addEventListener('click',function(){
+    $$('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+    var f=c.dataset.f;
+    $$('#cards .card').forEach(function(card){card.hidden=!(f==='all'||card.dataset.cat.split(' ').indexOf(f)>-1)});
+  })});
+
+  var sel=$('#f-course');
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-pick]');if(!a)return;
+    var v=a.getAttribute('data-pick');
+    for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===v){sel.selectedIndex=i;break}}
+  });
+
+  var courses=[
+    {d:'2027-01-12',t:'Kurs dla par • pon. i śr., 18:00',n:'Kurs dla par',left:2},
+    {d:'2027-02-03',t:'Kurs dla par • wt. i czw., 17:30',n:'Kurs dla par',left:5},
+    {d:'2027-02-17',t:'Szkoła rodzenia online • wtorki, 19:00',n:'Szkoła rodzenia online',left:9},
+    {d:'2027-03-09',t:'Kurs dla par • pon. i śr., 18:00',n:'Kurs dla par',left:8},
+    {d:'2027-04-13',t:'Kurs dla par • wt. i czw., 17:30',n:'Kurs dla par',left:8}
+  ].map(function(c){c.date=new Date(c.d+'T12:00:00');return c});
+  var MON=['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'];
+  var wrap=$('#dates');
+  courses.forEach(function(c){
+    var r=document.createElement('div');r.className='date-row';
+    var low=c.left<=3;
+    r.innerHTML='<span class="d">'+c.date.getDate()+' '+MON[c.date.getMonth()]+'</span><span class="t">'+c.t+'</span><span class="seats'+(low?' low':'')+'">'+(low?'Zostały '+c.left+' miejsca':'Wolne miejsca: '+c.left)+'</span><a class="btn btn-primary btn-sm" href="#zapis" data-pick="'+c.n+'">Zapisz się</a>';
+    wrap.appendChild(r);
+  });
+
+  var MIES=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+  function fmt(dt){return dt.getDate()+' '+MIES[dt.getMonth()]+' '+dt.getFullYear()}
+  $('#calc').addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=$('#c-due').value,out=$('#calc-out');
+    if(!v){out.innerHTML='<span class="hint">Wybierz datę terminu porodu.</span>';return}
+    var due=new Date(v+'T12:00:00'),day=86400000,from=new Date(due-84*day),to=new Date(due-42*day),now=new Date();
+    if(due<now){out.innerHTML='<span class="hint">Ta data już minęła – wybierz przyszły termin.</span>';return}
+    var pick=null,latest=new Date(due-21*day);
+    courses.forEach(function(c){if(!pick&&c.date>=from&&c.date<=latest&&c.date>now)pick=c});
+    var html='<span class="hint">Najlepszy czas na kurs (28.–34. tydzień)</span><b>'+fmt(from<now?now:from)+' – '+fmt(to)+'</b>';
+    if(pick){html+='<span>Polecamy grupę: <strong>'+pick.n+'</strong>, start '+fmt(pick.date)+'. <a href="#zapis" data-pick="'+pick.n+'" style="color:var(--berry);font-weight:700">Zapisz się →</a></span>'}
+    else{html+='<span>W tym okresie nie ma jeszcze grupy – <a href="#kontakt" style="color:var(--berry);font-weight:700">zadzwoń, ułożymy termin indywidualnie</a>.</span>'}
+    out.innerHTML=html;
+  });
+
+  var items=['Dokumenty i karta ciąży','Dowód osobisty','Koszula do porodu','Skarpetki antypoślizgowe','Podkłady i wkładki poporodowe','Kosmetyki i ręcznik','Ubranka dla dziecka na wyjście','Pieluszki i chusteczki','Ładowarka do telefonu','Przekąska i woda'];
+  var ul=$('#bag'),bar=$('#bag-bar'),txt=$('#bag-txt'),saved={};
+  try{saved=JSON.parse(localStorage.getItem('bag')||'{}')}catch(_){}
+  function upd(){
+    var n=$$('input:checked',ul).length;
+    bar.style.width=(n/items.length*100)+'%';
+    txt.textContent=n===items.length?'Torba spakowana – możecie jechać!':'Spakowano '+n+' z '+items.length;
+    var o={};$$('input',ul).forEach(function(i,k){o[k]=i.checked});
+    try{localStorage.setItem('bag',JSON.stringify(o))}catch(_){}
+  }
+  items.forEach(function(t,k){var li=document.createElement('li');li.innerHTML='<label><input type="checkbox"'+(saved[k]?' checked':'')+'><span>'+t+'</span></label>';ul.appendChild(li)});
+  ul.addEventListener('change',upd);upd();
+
+  var f=$('#signup');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=f.name.value.trim(),t=f.tel.value.replace(/[\s-]/g,''),ok=$('#f-ok').checked,bad=false,firstEl=null;
+    function set(id,m,el){$('#'+id).textContent=m;if(m){bad=true;if(!firstEl)firstEl=el}}
+    set('e-name',n.length<3?'Podaj imię i nazwisko.':'',f.name);
+    set('e-tel',/^\+?\d{9,12}$/.test(t)?'':'Podaj poprawny numer telefonu.',f.tel);
+    set('e-ok',ok?'':'Zaznacz zgodę, aby wysłać zgłoszenie.',$('#f-ok'));
+    if(bad){firstEl.focus();return}
+    f.classList.add('sent');var o=$('#ok');o.classList.add('show');o.focus();
+  });
+})();
+</script>
+</body>
+</html>
